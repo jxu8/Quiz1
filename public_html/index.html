@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Assignment4.css">
+    </head>
+    <body>
+        <p>Assignment 1</p>
+        <button onclick="Assignments.largestInt([1,54,231,5,3,2,98,45,65])">Normal Array</button>
+        <button onclick="Assignments.largestInt([])">Empty Array</button> 
+        <button onclick="Assignments.largestInt(12,14,15)">Just Integers</button>
+        <button onclick="Assignments.largestInt('abc', 'def','ghi')">Just Strings</button>
+                <p id ="Array"></p>      
+                <p id ="Largest"></p>
+        
+        <p>Assignment 2</p>        
+        <button onclick ="Assignments.detectBrowser()">Assignment 2</button>
+        <p id ="Assignment2Answer"></p>
+        
+        <p>Assignment 3</p>
+        <button onclick ="Assignments.reverseArray([1,43,6,43,7,5,24,75])">Normal Array</button>
+        <button onclick ="Assignments.reverseArray([])">Empty Array</button>
+        <button onclick ="Assignments.reverseArray(13,14,15)">just Integers</button>
+        <button onclick ="Assignments.reverseArray('abc','def','ghi')">Just Strings</button>
+                <p id ="3Array"></p>
+                <p id ="3RArray"></p>
+                          
+        <p>Assignment 4</p>
+        <button id = "chartButton" onclick ="LineChart()">Create a Line Chart</button>
+        <div class="linechart"></div>
+        
+        <script src="https://d3js.org/d3.v3.min.js"></script>     
+        <script src ="Assignments.js"></script>
+        <script src ="Assignment4.js"></script>
+        <script src="AssignmentX.js"></script>
+    </body>
+</html>
