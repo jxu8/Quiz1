@@ -49,6 +49,13 @@ var Assignments = (function runAssignments (){ //creating an Assignments functio
         document.getElementById("objValues").innerHTML= newArray;
     };   
 */
+    //Assignment 6
+    $(document).ready(function(){
+        $("#assignment6").mouseenter(function(){
+            $(this).text($("assignment6change").text());
+        });
+    });
+
     return {
         largestInt: largestInt,
         largestFloat: largestFloat,
