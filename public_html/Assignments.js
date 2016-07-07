@@ -38,9 +38,17 @@ var Assignments = (function runAssignments (){ //creating an Assignments functio
     document.getElementById("3Array").innerHTML = someArray;
     document.getElementById("3RArray").innerHTML = someArray.reverse();
 };     
-
-    
-
+ //Assignment 5
+/*Object.prototype.valuesToArray = function(){     
+        var newArray = [];
+        for (var y in this){
+            if(this.hasOwnProperty(y)){
+                newArray.push(this[y]);
+            }    
+        }
+        document.getElementById("objValues").innerHTML= newArray;
+    };   
+*/
     return {
         largestInt: largestInt,
         largestFloat: largestFloat,
