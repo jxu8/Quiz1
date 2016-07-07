@@ -10,9 +10,9 @@ var Assignments = (function runAssignments (){ //creating an Assignments functio
         document.getElementById("Array").innerHTML = someArray;
         someArray.sort(function(a , b){return b - a});
         document.getElementById("Largest").innerHTML = someArray [0];
-    }
+    };
     var largestFloat = function (){ //used as example of show closure
-    }
+    };
     var testArray = []; //used as example to show closure - cannot be accessed
     
     //Assignment 2
@@ -37,8 +37,9 @@ var Assignments = (function runAssignments (){ //creating an Assignments functio
     var reverseArray = function (someArray){
     document.getElementById("3Array").innerHTML = someArray;
     document.getElementById("3RArray").innerHTML = someArray.reverse();
-};
+};     
 
+    
 
     return {
         largestInt: largestInt,
@@ -47,3 +48,5 @@ var Assignments = (function runAssignments (){ //creating an Assignments functio
         reverseArray: reverseArray
     };
 })();
+
+
