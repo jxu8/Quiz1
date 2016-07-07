@@ -56,6 +56,28 @@ var Assignments = (function runAssignments (){ //creating an Assignments functio
         });
     });
 
+    //Assignment 7
+    $(document).ready(function(){
+        $("#timeBtn").click(function(){
+            var now = new Date(); //put date object inside the function so it shows time at which button is clicked
+            var currentDate = ["0"+ (now.getMonth()+1), "0"+ now.getDate(), now.getFullYear()];
+            var currentTime = [now.getHours(), now.getMinutes(), now.getSeconds()];
+            $(this).text(currentDate + " " + currentTime.join(":")); 
+        });
+    });
+    
+    //Assignment 8
+    $(document).ready(function(){
+       $("#jsonData").click(function(){
+            $.get('http://oncotree.mskcc.org/oncotree/api/mainTypes', function(objData){
+                var jsonArray = objData.data;
+                $("#jsonLength").text(jsonArray.length); 
+                console.log("2");
+            }); 
+            console.log("123"); //prints out 123 before 2, "promise"- example of asynchronized function
+       });
+    });
+    
     return {
         largestInt: largestInt,
         largestFloat: largestFloat,
